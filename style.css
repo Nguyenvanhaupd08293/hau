@@ -1,23 +1,128 @@
-.form-button {
-    border-radius: 20px;
-    font-weight: bold;
-    color: black;
-    box-shadow: inset 0 0 100px yellow;
-    border-color: rgb(235, 233, 240);
+.login {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-section .input-form input {
-    width: 20%;
-    padding: 10px 20px;
-    outline: none;
-    border: 1px solid #607d8b;
+h1 {
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: 300;
+    color: #333;
+    text-align: left;
+    font-family: 'Noto Serif', serif;
+}
+
+form {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.float-right {
+    text-align: right;
+    margin-bottom: 5px;
     font-size: 16px;
-    letter-spacing: 1px;
+    font-weight: 600;
+    color: #427582;
+    margin-top: -5%;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #333;
+}
+
+label[for="show-password"] {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #427582;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    color: #333;
+    transition: border-color .3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: 2px solid rgb(76, 166, 176);
+}
+
+button {
+    padding: 11px 12px;
+    box-shadow: none;
+    border-radius: 65px;
+    border-color: 1px #333;
+    background-color: rgb(249, 220, 30);
+    color: rgb(17, 16, 16);
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    width: 25%;
+}
+
+button:hover {
+    background-color: #f9dc1e;
+    box-shadow: 6px 6px black;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    color: #427582;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+input[type="checkbox"] {
+    width: 830px;
+    height: 19px;
+    padding: 10px 20px;
+    border: 1px solid #607d8b;
     color: black;
     border-radius: 5px;
+    position: fixed;
+    left: 50px;
+    right: 408px;
+    /* color: #333; */
+    top: 479px;
 }
 
-.form-button {
-    width: 7%;
-    height: 50%;
+#checkBox {
+    position: fixed;
+    left: 500px;
+    right: 408px;
+    /* color: #333; */
+    top: 485px;
+    margin-bottom: 5px;
+}
+
+.check {
+    margin-bottom: 26px;
+}
+
+.notes {
+    text-align: left;
 }

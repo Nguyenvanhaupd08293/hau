@@ -8,24 +8,34 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Serif&display=swap" rel="stylesheet">
+<script src="ap.js"></script>
 
 <body>
-    <section>
-        <div class="input-form">
-            <h1>Log In</h1>
-            <p> Need a Mailchimp account? <a href=""> Đăng kí tài khoản </a></p>
-            <b>
-        <p><label>Username or Email</label><br>
-        <input type="text" name=""></p>
-        <label>Password</label><br>
-        <input type="password" name=""></div>  <br> 
-        <input type="checkbox"> Keep me logged in<br>
-       <p> <button class="form-button">Log in</button></p> 
-    </b>
-            <a href="">Forgot username?</a>.
-            <a href="">Forgot password?</a><br>
-            <a href="">Can't log in?<div>
-        </section>
+    <a href="https://mailchimp.com/"> <img src="images/touch-icon-192.png" width="100" height="100" alt="Mailchimp logo"> </a>
+    <div class="login">
+        <h1>Log In</h1>
+        <p> <span class="padding">Need a Mailchimp account? </span><a href="/signup/" title="Signup for a Mailchimp account" onclick="ga('send', 'event', window.location.pathname, 'action', 'Create Account From Login');"> Create an account </a></p>
+        <form>
+            <label>Username or Email</label>
+            <input type="email" placeholder="">
+            <label>Password</label>
+            <div class="float-right">
+                <div onclick=i class="fas fa-eye" type="checkbox" name="show-password" id="show-password" class="hide av-checkbox" value="1"> <label for="show-password" title="Show Password" class="showPassword" data-mc-el="showPassword">Show </label></div>
+            </div>
+            <input type="password" placeholder="">
+            <input type="checkbox" name="love1" id="love2" value="LoveHTML">
+            <div class="check"><label for="love2" id="checkBox">Keep me logged in</label><br></div>
+            <button type="submit">Log In</button>
+            <div class="notes">
+                <p><a href="">Forgot username?</a>.<a href="#">Forgot password?</a></p>
+                <a href="#">Can't log in?</a>
+            </div>
+        </form>
+
 </body>
 
 </html>
