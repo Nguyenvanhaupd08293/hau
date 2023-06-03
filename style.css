@@ -1,7 +1,7 @@
 .login {
     max-width: 500px;
     margin: 0 auto;
-    text-align: center;
+    padding: 48px auto;
 }
 
 h1 {
@@ -17,6 +17,9 @@ form {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     margin-top: 30px;
+}
+
+.form-item {
     display: flex;
     flex-direction: column;
 }
@@ -38,13 +41,24 @@ label {
     color: #333;
 }
 
-label[for="show-password"] {
+#eye {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #427582;
+    margin-top: -5%;
+}
+
+
+/* label[for="show-password"],
+label[for="hide-password"] {
     text-align: left;
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: 550;
     color: #427582;
-}
+} */
 
 input[type="email"],
 input[type="password"] {
@@ -96,33 +110,31 @@ a {
     text-decoration: none;
 }
 
-input[type="checkbox"] {
-    width: 830px;
-    height: 19px;
+.keep-me-container input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
     padding: 10px 20px;
-    border: 1px solid #607d8b;
+    border: 1px solid #ccc;
     color: black;
     border-radius: 5px;
-    position: fixed;
-    left: 50px;
-    right: 408px;
-    /* color: #333; */
-    top: 479px;
+    margin-right: 12px;
 }
 
-#checkBox {
-    position: fixed;
-    left: 500px;
-    right: 408px;
-    /* color: #333; */
-    top: 485px;
-    margin-bottom: 5px;
+.keep-me-container {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
-.check {
-    margin-bottom: 26px;
+
+/* .notes {
+    margin: 48px 0;
 }
 
-.notes {
-    text-align: left;
-}
+.notes a {
+    color: #427582;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: auto 6px;
+} */
